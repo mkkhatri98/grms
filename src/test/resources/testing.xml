@@ -2,7 +2,12 @@
 <suite name="Selenium Test Suite">
     <test name="Login Tests">
         <classes>
-            <class name="tests.LoginTest"/>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+
         </classes>
     </test>
 </suite>

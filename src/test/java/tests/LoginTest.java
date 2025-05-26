@@ -17,9 +17,7 @@ public class LoginTest extends BaseTest {
                 ConfigReader.getProperty("username"),
                 ConfigReader.getProperty("password")
         );
-
-        Assert.assertTrue(dashboardPage.verifyLoginSuccessful(),
-                "Login failed: Dashboard element not found");
-
+        boolean loggedIn = dashboardPage.verifyLoginSuccessful();
+        Assert.assertTrue(loggedIn, "Login failed: Dashboard element not found");
     }
 }
