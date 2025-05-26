@@ -58,6 +58,7 @@ Thumbs.db
 allure-results/
 allure-report/
 logs/
+screenshots/
 *.log
 test-output/
 surefire-reports/
